@@ -1,4 +1,4 @@
-function [Ig,Mo,Fo,mG,mass] = Elements()
+function [Ig,Mo,Fo,mG,mass] = elements()
 close all %close all figure
 clear all %clear all variables
 clc %clear command window 
@@ -46,8 +46,7 @@ bodies = [element1, element2];
      Fo = Fo + bodies(i).F; %sum of forces on o
      mG = mG + bodies(i).m * bodies(i).Lcm;
   end
-  mG = mG/mass;
-  %values = [Ig Mo Fo mG mass];
+  mG = mG/mass;% center of mass
   
  
 end

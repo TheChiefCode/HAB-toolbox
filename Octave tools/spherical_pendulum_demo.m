@@ -9,7 +9,7 @@ t = 3; % runtime (s
 dt = .01; % timestep (s
 
 time = 0:dt:t;
-[Ig,Mo,Fo,mG,mass] = Elements();
+[Ig,Mo,Fo,mG,mass] = elements();
 y=[0 1 1 0]; % intial conditions [tdd pdd td pd]
 
 xa = []; % xaxis values
