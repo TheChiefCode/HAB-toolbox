@@ -5,7 +5,7 @@ clc %clear command window
 
 clear all;
 l=1; % length of string (s
-t = 3; % runtime (s
+t = 3; % runtime (s) longer run = more swoops
 dt = .01; % timestep (s
 
 time = 0:dt:t;
