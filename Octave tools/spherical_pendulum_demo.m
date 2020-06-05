@@ -4,13 +4,13 @@ clear all %clear all variables
 clc %clear command window 
 
 clear all;
-l=1;
-t = 3; %s
-dt = .01;
+l=1; % length of string (s
+t = 3; % runtime (s
+dt = .01; % timestep (s
 
 time = 0:dt:t;
 [Ig,Mo,Fo,mG,mass] = Elements();
-y=[0 1 1 0];
+y=[0 1 1 0]; % intial conditions [tdd pdd td pd]
 
 xa = []; % xaxis values
 ya = []; % y axis values
@@ -24,7 +24,7 @@ za = []; % z axis values
      ya = [ya; l*sin(y(3))*sin(y(4))];
      za = [za; -l*cos(y(3))];
      %drawnow();
-     %plot3(xa,ya,za); % animate
+     %plot3(xa,ya,za); % animate (takes a long time)
      %pause(.001);
   end
 plot3(xa,ya,za);

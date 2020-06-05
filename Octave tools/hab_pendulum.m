@@ -2,8 +2,6 @@
 function [A] = hab_pendulum(y,t,l,m)
 
 g=9.81; %m/s^2
-l = 1; %m
-m = 2; %kg
 
 theta_dot = y(1);
 phi_dot = y(2);
